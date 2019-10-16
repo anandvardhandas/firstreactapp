@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/15.6.2/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0-alpha1/JSXTransformer.js"></script>
+    <style>
+        .Header{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    
+<div id="container"></div>
+
+<script type="text/jsx">
+    var selement  = 
+    <section>
+        <h2 className="Header">hello world</h2>
+        {/* <h3>this is a comment </h3> */}
+        <p>test paragraph</p>
+    </section>
+
+    ReactDOM.render(selement, document.getElementById('container'));
+</script>
+
+</body>
+</html>

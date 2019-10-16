@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/15.6.2/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0-alpha1/JSXTransformer.js"></script>
+    <style>
+        .Header{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    
+<div id="container"></div>
+
+<script type="text/jsx">
+    
+    class BasicComponent extends React.Component{
+        render(){
+            return <div> 
+                <h2> Hello with JSX </h2>
+                <p> test para </p>
+                <p> {this.props.msg }  </p>
+            </div>
+        }
+    }
+
+    //var componentInstance = React.createElement(BasicComponent);
+
+    //var componentInstance = <BasicComponent /> 
+
+    var componentInstance = <div> <BasicComponent msg="hey message" /> <BasicComponent msg="2nd message" /> </div>
+
+    ReactDOM.render(componentInstance, document.getElementById('container'));
+</script>
+
+</body>
+</html>

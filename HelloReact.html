@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/15.6.2/react-dom.js"></script>
+    
+</head>
+<body>
+    <div id="root">
+    </div>
+
+
+
+    <script>
+        var h1element = React.createElement("h1", {}, "Hello World!");
+        var pelement = React.createElement("p", {}, "paragraph");
+        var selement = React.createElement("section", {}, [h1element,pelement]);
+        ReactDOM.render(selement, document.getElementById('root'));
+    </script>
+</body>
+</html>
